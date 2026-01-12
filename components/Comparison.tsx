@@ -4,9 +4,9 @@ export const Comparison: React.FC = () => {
   const cards = [
     {
       title: 'bc1',
-      value: 'R$ 26.783,25',
+      value: 'R$ 26.800,00',
       note: 'Você paga menos.',
-      cost: 'Custo por US$1,00 = R$5,3567',
+      cost: 'Custo por US$1,00 = R$5,36',
       bg: 'bg-bc1-orange',
       text: 'text-white',
       border: 'border-transparent',
@@ -14,7 +14,7 @@ export const Comparison: React.FC = () => {
       tag: null
     },
     {
-      title: 'Banco X',
+      title: 'Banco N',
       value: 'R$ 28.115,75',
       note: 'Receba 5% menos ao converter.',
       cost: 'Custo por US$1,00 = R$5,6231',
@@ -25,7 +25,7 @@ export const Comparison: React.FC = () => {
       tag: '5% MENOS'
     },
     {
-      title: 'Banco Y',
+      title: 'Banco C',
       value: 'R$ 28.658,07',
       note: 'Receba 7% menos.',
       cost: 'Custo por US$1,00 = R$5,7316',
@@ -36,7 +36,7 @@ export const Comparison: React.FC = () => {
       tag: '7% MENOS'
     },
     {
-      title: 'Banco Z',
+      title: 'Banco W',
       value: 'R$ 29.461,50',
       note: 'Receba 10% menos.',
       cost: 'Custo por US$1,00 = R$5,8923',
