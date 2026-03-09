@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: './', // Ensures assets are loaded correctly on GitHub Pages
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     emptyOutDir: true,
   }
 });

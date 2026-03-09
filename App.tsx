@@ -1,35 +1,33 @@
 import React from 'react';
 import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Converter } from './components/Converter';
-import { Comparison } from './components/Comparison';
-import { Security } from './components/Security';
-import { Steps } from './components/Steps';
+import { Quotes } from './components/Quotes';
+import { Product } from './components/Product';
+import { Merchants } from './components/Merchants';
+import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <main className="w-full min-h-screen font-sans selection:bg-bc1-orange selection:text-white">
-      <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-[2px]">
-        <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-          <div className="text-2xl font-bold tracking-tight text-bc1-black">bc1</div>
-          <div className="hidden md:flex gap-6 text-sm font-medium text-bc1-black/70">
-            <a href="#" className="hover:text-bc1-orange transition-colors">Sobre</a>
-            <a href="#" className="hover:text-bc1-orange transition-colors">Segurança</a>
-            <a href="#" className="hover:text-bc1-orange transition-colors">Taxas</a>
+    <main className="w-full min-h-screen font-sans selection:bg-bc1-lime selection:text-black bg-bc1-dark">
+      <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-bc1-dark/50 border-b border-bc1-border">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="text-2xl font-bold tracking-tight text-white">bc1</div>
+          <div className="hidden md:flex gap-8 text-sm font-medium text-bc1-textMuted">
+            <a href="#" className="hover:text-white transition-colors">Pessoal</a>
+            <a href="#" className="hover:text-white transition-colors">Cotações</a>
+            <a href="#" className="hover:text-white transition-colors">Empresarial</a>
           </div>
-          <button className="text-sm font-bold border-b border-bc1-black pb-1 hover:text-bc1-orange hover:border-bc1-orange transition-colors">
-            ENTRAR
+          <button className="text-sm font-semibold bg-bc1-card border border-bc1-border text-white px-5 py-2 rounded-full hover:bg-bc1-cardHover transition-colors">
+            Suporte
           </button>
         </div>
       </nav>
 
       <Hero />
-      <About />
-      <Converter />
-      <Comparison />
-      <Security />
-      <Steps />
+      <Quotes />
+      <Product />
+      <Merchants />
+      <CTA />
       <Footer />
     </main>
   );

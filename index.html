@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bc1 - Seu novo banco global</title>
+    <title>bc1 - Sua experiência digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,19 @@
             },
             colors: {
               bc1: {
-                black: '#000000',
-                orange: '#F7931A', // Bitcoin Orange
-                caramelLight: '#F5E6CA', 
-                caramelDark: '#D35400',
-                brown: '#5D4037',
-                brownDeep: '#3E2723',
-                cream: '#FFFCF5',
+                dark: '#2A3F2D',
+                darker: '#1D2B1E',
+                lime: '#D4FF59',
+                purple: '#C8A2FF',
+                card: 'rgba(255, 255, 255, 0.06)',
+                cardHover: 'rgba(255, 255, 255, 0.1)',
+                border: 'rgba(255, 255, 255, 0.1)',
+                text: '#FFFFFF',
+                textMuted: 'rgba(255, 255, 255, 0.7)',
               }
+            },
+            backgroundImage: {
+              'hero-glow': 'radial-gradient(circle at 50% 0%, rgba(212, 255, 89, 0.2) 0%, rgba(42, 63, 45, 0) 70%)',
             }
           }
         }
@@ -33,14 +38,21 @@
     </script>
     <style>
       body {
-        background-color: #FFFCF5;
-        color: #000;
+        background: linear-gradient(135deg, #2A3F2D 0%, #1D2B1E 100%);
+        background-attachment: fixed;
+        color: #FFFFFF;
         -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
       }
-      /* Custom selection color */
       ::selection {
-        background: #F7931A;
-        color: #fff;
+        background: #D4FF59;
+        color: #000;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
       }
     </style>
   <script type="importmap">
@@ -55,11 +67,9 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
     <script type="module" src="./index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+  </body>
 </html>
