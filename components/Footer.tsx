@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
           <h4 className="text-white font-semibold mb-6">Legal</h4>
           <ul className="space-y-4 text-sm">
             <li><a href="#" className="hover:text-bc1-lime transition-colors">Termos de Uso</a></li>
-            <li><a href="#" className="hover:text-bc1-lime transition-colors">Privacidade</a></li>
+            <li><a href="/privacy-policy" className="hover:text-bc1-lime transition-colors">Privacidade</a></li>
             <li><a href="#" className="hover:text-bc1-lime transition-colors">Suporte</a></li>
           </ul>
         </div>
