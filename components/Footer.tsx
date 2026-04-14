@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -14,18 +15,19 @@ export const Footer: React.FC = () => {
         <div>
           <h4 className="text-white font-semibold mb-6">Plataforma</h4>
           <ul className="space-y-4 text-sm">
-            <li><a href="#" className="hover:text-bc1-lime transition-colors">Sobre</a></li>
-            <li><a href="#" className="hover:text-bc1-lime transition-colors">Experiência</a></li>
-            <li><a href="#" className="hover:text-bc1-lime transition-colors">Segurança</a></li>
+            <li><Link to="/about" className="hover:text-bc1-lime transition-colors">Sobre</Link></li>
+            <li><Link to="/experience" className="hover:text-bc1-lime transition-colors">Experiência</Link></li>
+            <li><Link to="/security" className="hover:text-bc1-lime transition-colors">Segurança</Link></li>
           </ul>
         </div>
         
         <div>
           <h4 className="text-white font-semibold mb-6">Legal</h4>
           <ul className="space-y-4 text-sm">
-            <li><a href="#" className="hover:text-bc1-lime transition-colors">Termos de Uso</a></li>
-            <li><a href="/privacy-policy" className="hover:text-bc1-lime transition-colors">Privacidade</a></li>
-            <li><a href="#" className="hover:text-bc1-lime transition-colors">Suporte</a></li>
+            <li><Link to="/terms" className="hover:text-bc1-lime transition-colors">Termos de Uso</Link></li>
+            <li><Link to="/privacy-policy" className="hover:text-bc1-lime transition-colors">Privacidade</Link></li>
+            <li><Link to="/transparency" className="hover:text-bc1-lime transition-colors">Transparência</Link></li>
+            <li><Link to="/support" className="hover:text-bc1-lime transition-colors">Suporte</Link></li>
           </ul>
         </div>
       </div>

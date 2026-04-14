@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, ArrowDownUp, Wifi } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
   return (
@@ -11,34 +12,24 @@ export const Hero: React.FC = () => {
         <div className="flex flex-col items-start space-y-8 max-w-xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-bc1-border bg-bc1-card text-xs font-medium text-bc1-textMuted">
             <span className="w-2 h-2 rounded-full bg-bc1-lime"></span>
-            O futuro do dinheiro
+            Tecnologia Blockchain de Classe Mundial
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15]">
-            Seu dinheiro global, com menos custo e mais liberdade
+            Sua interface definitiva para a nova economia global.
           </h1>
           
           <p className="text-lg text-bc1-textMuted leading-relaxed max-w-md">
-            A tecnologia <strong className="text-white font-semibold">blockchain</strong> deixa tudo mais eficiente: menos intermediários, IOF 0% e taxas mais baixas. Use seu saldo no dia a dia, com cartão, no Brasil e em mais de 180 países.
+            A BC1 é uma plataforma tecnológica <strong className="text-white font-semibold">não-custodial</strong> que simplifica a interação com protocolos digitais e dólar global. Você no controle absoluto dos seus ativos e das suas chaves.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto pt-4">
-            <a href="https://apps.apple.com/app/bc1/id6761305119" target="_blank" rel="noopener" className="flex items-center justify-center sm:justify-start gap-2 bg-[#F8F9FA] text-[#1A1A1A] px-4 py-2 rounded-xl shadow-[0_4px_14px_rgba(0,0,0,0.05)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.1)] hover:scale-105 transition-all border border-gray-100">
-              <svg viewBox="0 0 384 512" className="w-6 h-6 text-black" fill="currentColor">
-                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-              </svg>
-              <div className="flex flex-col items-start">
-                <span className="text-[10px] font-medium leading-none mb-1 text-gray-600">Baixar na</span>
-                <span className="text-lg font-bold leading-none tracking-tight">App Store</span>
-              </div>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=global.bc1.app" target="_blank" rel="noopener" className="flex items-center justify-center sm:justify-start gap-2 bg-[#F8F9FA] text-[#1A1A1A] px-4 py-2 rounded-xl shadow-[0_4px_14px_rgba(0,0,0,0.05)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.1)] hover:scale-105 transition-all border border-gray-100">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Google Play" className="w-5 h-5" />
-              <div className="flex flex-col items-start">
-                <span className="text-[10px] font-medium leading-none mb-1 text-gray-600">Disponível no</span>
-                <span className="text-lg font-bold leading-none tracking-tight">Google Play</span>
-              </div>
-            </a>
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4">
+            <Link to="/support" className="px-8 py-4 bg-bc1-lime text-black font-bold rounded-2xl hover:scale-105 transition-transform shadow-xl shadow-bc1-lime/20 text-center">
+              Começar Agora
+            </Link>
+            <Link to="/support" className="px-8 py-4 bg-white/5 border border-bc1-border text-white font-bold rounded-2xl hover:bg-white/10 transition-colors text-center">
+              Conhecer a Tecnologia
+            </Link>
           </div>
         </div>
 
@@ -152,9 +143,9 @@ export const Hero: React.FC = () => {
                    <div className="absolute top-[540px] w-40 h-4 bg-bc1-lime/20 blur-xl rounded-full animate-shadow-pulse"></div>
                 </div>
 
-                <div className="w-full py-5 bg-bc1-lime text-black text-center text-[12px] font-bold uppercase tracking-wider mt-auto hover:bg-[#c4f042] transition-colors cursor-pointer shrink-0">
+                <Link to="/support" className="w-full py-5 bg-bc1-lime text-black text-center text-[12px] font-bold uppercase tracking-wider mt-auto hover:bg-[#c4f042] transition-colors cursor-pointer shrink-0">
                   Usar Cartão Global
-                </div>
+                </Link>
              </div>
           </div>
         </div>

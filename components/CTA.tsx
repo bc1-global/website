@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const CTA: React.FC = () => {
   return (
@@ -17,10 +18,10 @@ export const CTA: React.FC = () => {
           Junte-se a milhares de pessoas que já simplificaram sua rotina financeira com a bc1.
         </p>
         
-        <button className="flex items-center justify-center gap-3 bg-bc1-lime text-black px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-[#c4f042] transition-colors duration-300 w-full sm:w-auto shadow-xl shadow-bc1-lime/20">
+        <Link to="/support" className="flex items-center justify-center gap-3 bg-bc1-lime text-black px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-[#c4f042] transition-colors duration-300 w-full sm:w-auto shadow-xl shadow-bc1-lime/20">
           Começar agora
           <ArrowRight size={20} />
-        </button>
+        </Link>
       </div>
     </section>
   );

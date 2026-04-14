@@ -1,5 +1,6 @@
 import React from 'react';
 import { Store, RefreshCw, TrendingUp, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Merchants: React.FC = () => {
   const floatingLogos = [
@@ -62,10 +63,10 @@ export const Merchants: React.FC = () => {
             </li>
           </ul>
 
-          <button className="group inline-flex items-center gap-3 bg-white text-black font-medium px-8 py-4 rounded-full hover:bg-bc1-lime transition-all duration-300">
+          <Link to="/support" className="group inline-flex items-center gap-3 bg-white text-black font-medium px-8 py-4 rounded-full hover:bg-bc1-lime transition-all duration-300">
             Seja um Parceiro
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </div>
 
         {/* Visual Area */}
