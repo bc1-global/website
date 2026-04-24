@@ -1,36 +1,36 @@
 import React from 'react';
-import { ArrowRight, ArrowDownUp, Wifi } from 'lucide-react';
+import { ArrowDownUp, Wifi } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { StoreButtons } from './StoreButtons';
 
 export const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-6 overflow-hidden bg-bc1-dark">
       {/* Background glow */}
       <div className="absolute inset-0 bg-hero-glow opacity-60 pointer-events-none"></div>
-      
+
       <div className="max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="flex flex-col items-start space-y-8 max-w-xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-bc1-border bg-bc1-card text-xs font-medium text-bc1-textMuted">
             <span className="w-2 h-2 rounded-full bg-bc1-lime"></span>
-            Tecnologia Blockchain de Classe Mundial
+            Suas finanças na blockchain
           </div>
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15]">
-            Sua interface definitiva para a nova economia global.
+
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05]">
+            A evolução do dinheiro <br className="hidden md:block" />
+            <span className="text-bc1-lime">já começou.</span>
           </h1>
-          
-          <p className="text-lg text-bc1-textMuted leading-relaxed max-w-md">
-            A BC1 é uma plataforma tecnológica <strong className="text-white font-semibold">não-custodial</strong> que simplifica a interação com protocolos digitais e dólar global. Você no controle absoluto dos seus ativos e das suas chaves.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4">
-            <Link to="/support" className="px-8 py-4 bg-bc1-lime text-black font-bold rounded-2xl hover:scale-105 transition-transform shadow-xl shadow-bc1-lime/20 text-center">
-              Começar Agora
-            </Link>
-            <Link to="/support" className="px-8 py-4 bg-white/5 border border-bc1-border text-white font-bold rounded-2xl hover:bg-white/10 transition-colors text-center">
-              Conhecer a Tecnologia
-            </Link>
+
+          <div className="max-w-xl space-y-6">
+            <p className="text-xl md:text-2xl text-white font-medium leading-snug">
+              A Bc1 une a liberdade da blockchain com a praticidade do seu dia a dia.
+            </p>
+            <p className="text-lg text-bc1-textMuted leading-relaxed">
+              Pague boletos, envie dólares instantaneamente e controle sua vida financeira global em uma plataforma <span className="text-white font-semibold">não-custodial</span> — onde o poder está sempre nas suas mãos.
+            </p>
           </div>
+
+          <StoreButtons className="pt-4" />
         </div>
 
         {/* Animated Mockup Area */}
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
           <div className="relative transform scale-[0.75] sm:scale-90 transition-transform duration-500">
              {/* Phone Mockup Frame */}
              <div className="relative w-[300px] h-[600px] border-[8px] border-bc1-darker bg-bc1-darker shadow-2xl shadow-bc1-lime/10 flex flex-col p-0 overflow-hidden rounded-[48px]">
-                
+
                 {/* Mockup Status Bar */}
                 <div className="w-full h-7 bg-transparent flex justify-between items-center px-5 z-20 shrink-0 mt-2">
                    <span className="text-[11px] font-bold text-transparent">00:00</span>
@@ -47,10 +47,10 @@ export const Hero: React.FC = () => {
                      <div className="w-3 h-3 bg-white rounded-sm"></div>
                    </div>
                 </div>
-                
+
                 {/* Animation Stage */}
                 <div className="flex-grow relative bg-gradient-to-b from-[#152319] to-bc1-darker overflow-hidden flex flex-col items-center pt-8 perspective-container">
-                   
+
                    <div className="absolute top-8 flex flex-col items-center z-10 animate-flow-in-out">
                      <div className="w-10 h-10 bg-bc1-lime rotate-45 flex items-center justify-center shadow-lg mb-2">
                        <span className="text-black font-bold -rotate-45 text-[10px]">PIX</span>
@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
                              USDC
                           </div>
                        </div>
-                       
+
                        <div className="absolute flex flex-col items-center animate-eject-right opacity-0">
                           <div className="w-9 h-9 rounded-full bg-bc1-purple flex items-center justify-center shadow-lg text-black font-bold text-[9px] border-2 border-bc1-border">
                              BRLA
@@ -94,7 +94,7 @@ export const Hero: React.FC = () => {
                                   </linearGradient>
                                </defs>
                                {Array.from({length: 12}).map((_, i) => (
-                                  <path 
+                                  <path
                                     key={i}
                                     d={`M-10 ${10 + i * 7} Q 60 ${40 + i * 5}, 170 ${i * 4}`}
                                     stroke="url(#cardLineGrad)"
@@ -154,7 +154,7 @@ export const Hero: React.FC = () => {
       <style>{`
         .perspective-container { perspective: 800px; }
         .preserve-3d { transform-style: preserve-3d; }
-        
+
         @keyframes flow-in-out {
           0% { transform: translateY(-40px) scale(0.8); opacity: 0; }
           10% { transform: translateY(0) scale(1); opacity: 1; }

@@ -35,7 +35,7 @@ const Experience: React.FC = () => {
               <div className="w-14 h-14 rounded-2xl bg-bc1-lime flex items-center justify-center shadow-lg shadow-bc1-lime/20">
                 <Smartphone className="w-7 h-7 text-black" />
               </div>
-              <h3 className="text-2xl font-bold">Como a BC1 funciona</h3>
+              <h3 className="text-2xl font-bold">Como a Bc1 funciona</h3>
               <p className="text-bc1-textMuted leading-relaxed">
                 Atuamos como um tradutor tecnológico. Através do nosso licenciamento de software, você acessa uma interface que executa comandos diretamente na rede, permitindo o uso de ativos digitais com a mesma facilidade de um aplicativo moderno.
               </p>
@@ -56,7 +56,7 @@ const Experience: React.FC = () => {
               <Layout className="w-48 h-48 text-bc1-lime" />
             </div>
             <div className="relative z-10">
-              <h3 className="text-2xl font-bold mb-8">Diferenciais da BC1</h3>
+              <h3 className="text-2xl font-bold mb-8">Diferenciais da Bc1</h3>
               <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
                 {[
                   { title: 'Autocustódia', desc: 'Controle total e soberano dos seus ativos.' },

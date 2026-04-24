@@ -27,7 +27,7 @@ const About: React.FC = () => {
             <span className="text-bc1-lime">Soberania Digital</span>
           </h1>
           <p className="text-xl text-bc1-textMuted leading-relaxed mb-12">
-            A BC1 é uma plataforma de tecnologia financeira baseada em blockchain, desenvolvida para ser a camada de inteligência e interface entre o usuário e a infraestrutura digital global.
+            A Bc1 é uma plataforma de tecnologia financeira baseada em blockchain, desenvolvida para ser a camada de inteligência e interface entre o usuário e a infraestrutura digital global.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-24">
@@ -50,16 +50,16 @@ const About: React.FC = () => {
 
           <div className="prose prose-invert prose-lg max-w-none text-bc1-textMuted leading-relaxed space-y-8">
             <section>
-              <h2 className="text-white text-2xl font-bold">O que é a BC1</h2>
+              <h2 className="text-white text-2xl font-bold">O que é a Bc1</h2>
               <p>
-                Somos um provedor de tecnologia e software que licencia uma interface intuitiva para que pessoas e empresas possam interagir diretamente com redes descentralizadas e parceiros integrados. A BC1 não é um banco, exchange, corretora ou custodiante. Somos a camada tecnológica que traduz a complexidade da blockchain em utilidade real.
+                Somos um provedor de tecnologia e software que licencia uma interface intuitiva para que pessoas e empresas possam interagir diretamente com redes descentralizadas e parceiros integrados. A Bc1 não é um banco, exchange, corretora ou custodiante. Somos a camada tecnológica que traduz a complexidade da blockchain em utilidade real.
               </p>
             </section>
 
             <section>
               <h2 className="text-white text-2xl font-bold">Relação Jurídica e Papel da Plataforma</h2>
               <p>
-                A relação entre a BC1 e seus usuários é estritamente de licenciamento de uso de software. Não atuamos como intermediários financeiros clássicos, não recebemos, não mantemos e não movimentamos ativos de usuários em contas próprias. Nosso papel é fornecer a ferramenta tecnológica para que você exerça sua própria autonomia financeira.
+                A relação entre a Bc1 e seus usuários é estritamente de licenciamento de uso de software. Não atuamos como intermediários financeiros clássicos, não recebemos, não mantemos e não movimentamos ativos de usuários em contas próprias. Nosso papel é fornecer a ferramenta tecnológica para que você exerça sua própria autonomia financeira.
               </p>
             </section>
 

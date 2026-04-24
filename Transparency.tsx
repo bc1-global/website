@@ -27,14 +27,14 @@ const Transparency: React.FC = () => {
             <span className="text-bc1-lime">Transparência</span>
           </h1>
           <p className="text-xl text-bc1-textMuted leading-relaxed mb-16">
-            Para nós, transparência não é apenas um valor, é a base da nossa arquitetura tecnológica. Entenda exatamente o papel da BC1 e como seus ativos são tratados.
+            Para nós, transparência não é apenas um valor, é a base da nossa arquitetura tecnológica. Entenda exatamente o papel da Bc1 e como seus ativos são tratados.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-24">
             <div className="bg-bc1-card border border-bc1-border p-10 rounded-[2.5rem] border-t-4 border-t-bc1-lime">
               <div className="flex items-center gap-3 mb-6">
                 <CheckCircle2 className="w-6 h-6 text-bc1-lime" />
-                <h3 className="text-xl font-bold">O que a BC1 é</h3>
+                <h3 className="text-xl font-bold">O que a Bc1 é</h3>
               </div>
               <ul className="space-y-4 text-sm text-bc1-textMuted">
                 <li>• Um provedor de tecnologia e software.</li>
@@ -46,7 +46,7 @@ const Transparency: React.FC = () => {
             <div className="bg-bc1-card border border-bc1-border p-10 rounded-[2.5rem] border-t-4 border-t-red-500/50">
               <div className="flex items-center gap-3 mb-6">
                 <XCircle className="w-6 h-6 text-red-500" />
-                <h3 className="text-xl font-bold">O que a BC1 não é</h3>
+                <h3 className="text-xl font-bold">O que a Bc1 não é</h3>
               </div>
               <ul className="space-y-4 text-sm text-bc1-textMuted">
                 <li>• Não somos um banco ou instituição financeira.</li>
@@ -64,7 +64,7 @@ const Transparency: React.FC = () => {
                 Tratamento de Ativos
               </h2>
               <p className="text-bc1-textMuted leading-relaxed mb-6">
-                A BC1 não recebe, não mantém e não movimenta ativos de usuários em contas próprias. Todos os ativos permanecem sob autocustódia do usuário diretamente na blockchain. Nosso software apenas fornece a interface para que você interaja com seus próprios ativos.
+                A Bc1 não recebe, não mantém e não movimenta ativos de usuários em contas próprias. Todos os ativos permanecem sob autocustódia do usuário diretamente na blockchain. Nosso software apenas fornece a interface para que você interaja com seus próprios ativos.
               </p>
               <div className="p-6 bg-bc1-lime/5 rounded-2xl border border-bc1-lime/20 flex items-start gap-4">
                 <Info className="w-5 h-5 text-bc1-lime shrink-0 mt-0.5" />

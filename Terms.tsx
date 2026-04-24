@@ -26,11 +26,11 @@ const Terms: React.FC = () => {
             Termos de <br />
             <span className="text-bc1-lime">Uso e Serviço</span>
           </h1>
-          
+
           <div className="bg-bc1-card border border-bc1-border p-8 rounded-3xl mb-12 flex items-start gap-4">
             <AlertCircle className="w-6 h-6 text-bc1-lime shrink-0 mt-1" />
             <p className="text-sm text-bc1-textMuted leading-relaxed">
-              Ao utilizar a plataforma BC1, você concorda com os termos aqui descritos. Recomendamos a leitura atenta deste documento para entender seus direitos e responsabilidades.
+              Ao utilizar a plataforma Bc1, você concorda com os termos aqui descritos. Recomendamos a leitura atenta deste documento para entender seus direitos e responsabilidades.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Terms: React.FC = () => {
                 2. Responsabilidade pela Autocustódia
               </h2>
               <p>
-                A BC1 é uma plataforma de autocustódia. Isso significa que você é o único responsável pela segurança de suas chaves privadas e frases de recuperação. A perda desses dados resultará na perda permanente do acesso aos seus ativos, sem possibilidade de recuperação pela BC1.
+                A Bc1 é uma plataforma de autocustódia. Isso significa que você é o único responsável pela segurança de suas chaves privadas e frases de recuperação. A perda desses dados resultará na perda permanente do acesso aos seus ativos, sem possibilidade de recuperação pela Bc1.
               </p>
             </section>
 

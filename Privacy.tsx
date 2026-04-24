@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Shield, 
-  Lock, 
-  Globe, 
-  UserCheck, 
-  HelpCircle, 
-  ChevronRight, 
-  Mail, 
-  MapPin, 
-  Phone, 
-  Eye, 
-  FileText, 
-  Server, 
-  Database, 
-  AlertCircle, 
+import {
+  Shield,
+  Lock,
+  Globe,
+  UserCheck,
+  HelpCircle,
+  ChevronRight,
+  Mail,
+  MapPin,
+  Phone,
+  Eye,
+  FileText,
+  Server,
+  Database,
+  AlertCircle,
   ExternalLink,
   Menu,
   X
@@ -27,19 +27,19 @@ const Privacy: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Política de Privacidade | BC1 - Autocustódia e Liberdade Digital";
-    
+    document.title = "Política de Privacidade | Bc1 - Autocustódia e Liberdade Digital";
+
     const handleScroll = () => {
       const sections = document.querySelectorAll('section[id]');
       let current = 'quem-somos';
-      
+
       sections.forEach((section) => {
         const sectionTop = (section as HTMLElement).offsetTop;
         if (window.pageYOffset >= sectionTop - 150) {
           current = section.getAttribute('id') || 'quem-somos';
         }
       });
-      
+
       setActiveSection(current);
     };
 
@@ -70,7 +70,7 @@ const Privacy: React.FC = () => {
   return (
     <div className="min-h-screen bg-bc1-dark text-white font-sans selection:bg-bc1-lime selection:text-black">
       {/* Mobile Sidebar Toggle (Floating) */}
-      <button 
+      <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         className="lg:hidden fixed bottom-6 right-6 z-[70] w-14 h-14 bg-bc1-lime text-black rounded-full shadow-2xl flex items-center justify-center transition-transform active:scale-95"
       >
@@ -94,8 +94,8 @@ const Privacy: React.FC = () => {
                   href={`#${section.id}`}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                    activeSection === section.id 
-                      ? 'bg-bc1-lime/10 text-bc1-lime border border-bc1-lime/20' 
+                    activeSection === section.id
+                      ? 'bg-bc1-lime/10 text-bc1-lime border border-bc1-lime/20'
                       : 'text-bc1-textMuted hover:bg-white/5'
                   }`}
                 >
@@ -119,7 +119,7 @@ const Privacy: React.FC = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-16">
-          
+
           {/* Desktop Sidebar Navigation - Refined Picnic Style */}
           <aside className="hidden lg:block w-72 shrink-0 sticky top-32 h-[calc(100vh-160px)] overflow-y-auto pr-4 scrollbar-hide border-r border-bc1-border/50">
             <div className="mb-8">
@@ -130,8 +130,8 @@ const Privacy: React.FC = () => {
                     key={section.id}
                     href={`#${section.id}`}
                     className={`block py-2 text-sm transition-all ${
-                      activeSection === section.id 
-                        ? 'text-bc1-lime font-bold' 
+                      activeSection === section.id
+                        ? 'text-bc1-lime font-bold'
                         : 'text-bc1-textMuted hover:text-white'
                     }`}
                   >
@@ -140,7 +140,7 @@ const Privacy: React.FC = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="pt-8 border-t border-bc1-border/50">
               <h3 className="text-xs font-bold uppercase tracking-widest text-bc1-textMuted mb-4">Artigos Relacionados</h3>
               <ul className="space-y-3">
@@ -172,7 +172,7 @@ const Privacy: React.FC = () => {
                   <span className="text-bc1-lime">Privacidade</span>
                 </h1>
                 <p className="text-xl text-bc1-textMuted leading-relaxed max-w-2xl mb-8">
-                  A BC1 respeita a sua privacidade e está comprometida com a proteção dos seus dados pessoais. Esta Política explica como coletamos, usamos e protegemos suas informações.
+                  A Bc1 respeita a sua privacidade e está comprometida com a proteção dos seus dados pessoais. Esta Política explica como coletamos, usamos e protegemos suas informações.
                 </p>
                 <div className="flex items-center gap-4 text-sm text-bc1-textMuted font-medium">
                   <span>Versão 2.1</span>
@@ -211,11 +211,11 @@ const Privacy: React.FC = () => {
                 <section id="quem-somos" className="scroll-mt-32">
                   <div className="mb-6">
                     <h2 className="text-3xl font-bold text-white mb-2">1. Quem Somos</h2>
-                    <p className="text-bc1-lime font-medium text-sm">Resumo: Somos a plataforma BC1, operada pela Brp2pcripto LTDA, focada em sua liberdade financeira.</p>
+                    <p className="text-bc1-lime font-medium text-sm">Resumo: Somos a plataforma Bc1, operada pela Brp2pcripto LTDA, focada em sua liberdade financeira.</p>
                   </div>
                   <div className="prose prose-invert prose-lg max-w-none text-bc1-textMuted leading-relaxed">
                     <p>
-                      A BC1 é uma plataforma baseada em blockchain, com foco em autocustódia e uso prático de ativos virtuais no dia a dia.
+                      A Bc1 é uma plataforma baseada em blockchain, com foco em autocustódia e uso prático de ativos virtuais no dia a dia.
                     </p>
                     <div className="bg-bc1-card p-6 rounded-2xl border border-bc1-border space-y-2">
                       <p className="text-sm"><strong className="text-white">Responsável pela operação:</strong> Brp2pcripto LTDA</p>
@@ -316,17 +316,17 @@ const Privacy: React.FC = () => {
                   </div>
                   <div className="prose prose-invert prose-lg max-w-none text-bc1-textMuted leading-relaxed space-y-4">
                     <p>
-                      Ao utilizar a BC1, você interage com redes blockchain públicas. Devido à natureza descentralizada e imutável dessas redes:
+                      Ao utilizar a Bc1, você interage com redes blockchain públicas. Devido à natureza descentralizada e imutável dessas redes:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li><strong className="text-white">Visibilidade:</strong> Endereços de carteira e detalhes de transações são registrados permanentemente e podem ser visualizados via exploradores de blocos.</li>
-                      <li><strong className="text-white">Imutabilidade:</strong> Uma vez confirmada, uma transação não pode ser alterada ou excluída pela BC1 ou por qualquer outra entidade.</li>
-                      <li><strong className="text-white">Autocustódia:</strong> Você é o único responsável pela segurança de suas chaves privadas. A BC1 não tem acesso aos seus ativos.</li>
+                      <li><strong className="text-white">Imutabilidade:</strong> Uma vez confirmada, uma transação não pode ser alterada ou excluída pela Bc1 ou por qualquer outra entidade.</li>
+                      <li><strong className="text-white">Autocustódia:</strong> Você é o único responsável pela segurança de suas chaves privadas. A Bc1 não tem acesso aos seus ativos.</li>
                     </ul>
                   </div>
                   <div className="mt-8 p-6 bg-bc1-lime/5 rounded-2xl border border-bc1-lime/20 text-bc1-lime text-sm font-medium flex items-start gap-3">
                     <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
-                    <p>Lembre-se: o que acontece na blockchain, fica na blockchain. A BC1 não possui controle sobre os dados registrados diretamente na rede.</p>
+                    <p>Lembre-se: o que acontece na blockchain, fica na blockchain. A Bc1 não possui controle sobre os dados registrados diretamente na rede.</p>
                   </div>
                 </section>
 
@@ -348,7 +348,7 @@ const Privacy: React.FC = () => {
                     <p className="text-bc1-lime font-medium text-sm">Resumo: Não rastreamos você em outros sites para te mostrar propagandas.</p>
                   </div>
                   <p className="text-bc1-textMuted text-lg leading-relaxed">
-                    A BC1 não realiza rastreamento de usuários entre apps e sites de terceiros para publicidade personalizada.
+                    A Bc1 não realiza rastreamento de usuários entre apps e sites de terceiros para publicidade personalizada.
                   </p>
                 </section>
 
@@ -371,7 +371,7 @@ const Privacy: React.FC = () => {
                   </div>
                   <div className="prose prose-invert prose-lg max-w-none text-bc1-textMuted leading-relaxed space-y-4">
                     <p>
-                      A segurança é o pilar central da BC1. Implementamos medidas técnicas e organizacionais rigorosas:
+                      A segurança é o pilar central da Bc1. Implementamos medidas técnicas e organizacionais rigorosas:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li><strong className="text-white">Criptografia:</strong> Todos os dados sensíveis são criptografados em repouso e em trânsito (TLS/SSL).</li>

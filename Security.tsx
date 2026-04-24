@@ -27,7 +27,7 @@ const Security: React.FC = () => {
             <span className="text-bc1-lime">Não-Custodial</span>
           </h1>
           <p className="text-xl text-bc1-textMuted leading-relaxed mb-12">
-            A BC1 opera sob um modelo estritamente de autocustódia. Isso significa que você mantém o controle exclusivo sobre seus ativos e suas chaves privadas.
+            A Bc1 opera sob um modelo estritamente de autocustódia. Isso significa que você mantém o controle exclusivo sobre seus ativos e suas chaves privadas.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-24">
@@ -44,7 +44,7 @@ const Security: React.FC = () => {
               <Shield className="w-10 h-10 text-bc1-lime mb-8" />
               <h3 className="text-xl font-bold mb-4">Sem Intermediários</h3>
               <p className="text-sm text-bc1-textMuted leading-relaxed">
-                Seus ativos nunca passam por contas da BC1. As transações são executadas diretamente na blockchain através da nossa interface.
+                Seus ativos nunca passam por contas da Bc1. As transações são executadas diretamente na blockchain através da nossa interface.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Security: React.FC = () => {
             <div>
               <h4 className="font-bold text-bc1-lime mb-2">Dica de Segurança</h4>
               <p className="text-sm text-bc1-textMuted leading-relaxed">
-                Ative sempre a Autenticação de Dois Fatores (2FA) e nunca compartilhe sua frase de recuperação com ninguém, nem mesmo com o suporte da BC1.
+                Ative sempre a Autenticação de Dois Fatores (2FA) e nunca compartilhe sua frase de recuperação com ninguém, nem mesmo com o suporte da Bc1.
               </p>
             </div>
           </div>

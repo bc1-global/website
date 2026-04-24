@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Mail, 
-  ChevronRight, 
+import {
+  Mail,
+  ChevronRight,
   Clock,
   Shield,
   MessageCircle,
@@ -67,14 +67,14 @@ const Support: React.FC = () => {
                   <span className="text-bc1-lime">ajudar você?</span>
                 </h1>
                 <p className="text-xl text-bc1-textMuted leading-relaxed max-w-2xl">
-                  Escolha um dos canais abaixo para falar com nossa equipe. Estamos prontos para garantir que sua experiência com a BC1 seja impecável.
+                  Escolha um dos canais abaixo para falar com nossa equipe. Estamos prontos para garantir que sua experiência com a Bc1 seja impecável.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-1 gap-6">
                 {/* Email Contact */}
-                <a 
-                  href="mailto:suporte@bc1.global" 
+                <a
+                  href="mailto:suporte@bc1.global"
                   className="group bg-bc1-card border border-bc1-border p-8 rounded-[2.5rem] hover:border-bc1-lime/30 transition-all duration-300"
                 >
                   <div className="w-14 h-14 bg-bc1-lime/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -91,11 +91,11 @@ const Support: React.FC = () => {
                 <h3 className="text-2xl font-bold mb-8">Dúvidas Frequentes</h3>
                 <div className="grid gap-4">
                   {[
-                    { q: 'A BC1 é um banco?', a: 'Não. Somos uma plataforma de tecnologia e software que licencia uma interface para blockchain.' },
-                    { q: 'A BC1 guarda o meu dinheiro?', a: 'Não. Seus ativos ficam na blockchain, sob sua própria custódia e controle exclusivo.' },
-                    { q: 'A BC1 tem acesso às minhas chaves?', a: 'Jamais. As chaves são geradas e mantidas localmente no seu dispositivo.' },
-                    { q: 'Qual a diferença para um banco?', a: 'Em um banco, você entrega seu dinheiro para eles. Na BC1, você usa nossa tecnologia para cuidar do seu próprio dinheiro.' },
-                    { q: 'A BC1 executa transações por mim?', a: 'Não. A plataforma apenas transmite os comandos que você autoriza pessoalmente.' }
+                    { q: 'A Bc1 é um banco?', a: 'Não. Somos uma plataforma de tecnologia e software que licencia uma interface para blockchain.' },
+                    { q: 'A Bc1 guarda o meu dinheiro?', a: 'Não. Seus ativos ficam na blockchain, sob sua própria custódia e controle exclusivo.' },
+                    { q: 'A Bc1 tem acesso às minhas chaves?', a: 'Jamais. As chaves são geradas e mantidas localmente no seu dispositivo.' },
+                    { q: 'Qual a diferença para um banco?', a: 'Em um banco, você entrega seu dinheiro para eles. Na Bc1, você usa nossa tecnologia para cuidar do seu próprio dinheiro.' },
+                    { q: 'A Bc1 executa transações por mim?', a: 'Não. A plataforma apenas transmite os comandos que você autoriza pessoalmente.' }
                   ].map((item, i) => (
                     <div key={i} className="p-6 bg-bc1-card border border-bc1-border rounded-2xl">
                       <h4 className="font-bold text-white mb-2">{item.q}</h4>

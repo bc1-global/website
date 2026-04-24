@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, BarChart3, CreditCard, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { Footer } from './components/Footer';
+import { Link } from 'react-router-dom';
 
 const Business: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const Business: React.FC = () => {
             <span className="text-bc1-lime">Nova Economia</span>
           </h1>
           <p className="text-xl text-bc1-textMuted leading-relaxed mb-12">
-            A BC1 oferece uma infraestrutura completa para que sua empresa possa aceitar, gerir e transacionar ativos digitais com total conformidade e segurança.
+            A Bc1 oferece uma infraestrutura completa para que sua empresa possa aceitar, gerir e transacionar ativos digitais com total conformidade e segurança.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-24">
@@ -49,7 +50,7 @@ const Business: React.FC = () => {
           </div>
 
           <div className="bg-bc1-card border border-bc1-border p-12 rounded-[3rem] mb-24">
-            <h3 className="text-2xl font-bold mb-8">Por que escolher a BC1 Business?</h3>
+            <h3 className="text-2xl font-bold mb-8">Por que escolher a Bc1 Business?</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 'Taxas competitivas e transparentes',
@@ -68,9 +69,11 @@ const Business: React.FC = () => {
           </div>
 
           <div className="text-center">
-            <button className="px-12 py-5 bg-bc1-lime text-black font-bold rounded-2xl hover:scale-105 transition-transform shadow-xl shadow-bc1-lime/20">
-              Falar com um Especialista
-            </button>
+            <Link to="/support">
+              <button className="px-12 py-5 bg-bc1-lime text-black font-bold rounded-2xl hover:scale-105 transition-transform shadow-xl shadow-bc1-lime/20">
+                Falar com um Especialista
+              </button>
+            </Link>
           </div>
         </motion.div>
       </main>
